@@ -1,0 +1,30 @@
+﻿@model IEnumerable<FinalFantasy.ViewModels.RaidtDateGroup>
+
+@{
+    ViewBag.Title = "Raid Statistics";
+}
+
+<h2>Raid Statistics</h2>
+
+<table>
+    <tr>
+        <th>
+            Raid Date
+        </th>
+        <th>
+            Rolls
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RaidDate)
+            </td>
+            <td>
+                @item.RollCount
+            </td>
+        </tr>
+    }
+</table>

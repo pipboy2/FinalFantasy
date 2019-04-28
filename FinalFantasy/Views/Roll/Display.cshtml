@@ -1,0 +1,37 @@
+﻿@model IEnumerable<FinalFantasy.Models.Roll>
+
+<h2>Roll Display</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(m => m.RollName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(m => m.RollAbr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(m => m.RaidDate)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.RollName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RollAbr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RaidDate)
+        </td>
+        <td></td>
+        <td>
+            @Html.ActionLink("Edit", "EditDisplay", new { id = item.ID })
+        </td>
+    </tr>
+    }
+</table>
