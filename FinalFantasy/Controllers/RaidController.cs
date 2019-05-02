@@ -13,6 +13,7 @@ namespace FinalFantasy.Controllers
 {
     public class RaidController : Controller
     {
+
         private FinalFantasyContext db = new FinalFantasyContext();
 
         // GET: Raid

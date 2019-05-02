@@ -10,6 +10,7 @@ using FinalFantasy.DAL;
 using FinalFantasy.Models;
 using PagedList;
 using System.Data.Entity.Infrastructure;
+using System.Data.Entity.Infrastructure;
 
 namespace FinalFantasy.Controllers
 {

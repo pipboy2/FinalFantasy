@@ -28,10 +28,12 @@
                     <li>@Html.ActionLink("Jobs", "Index", "Job")</li>
                     <li>@Html.ActionLink("Raids", "Index", "Raid")</li>
                     <li>@Html.ActionLink("Raid Statistics", "RaidStats", "Home")</li>
+
+
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li>@Html.ActionLink("Register", "Register", "Account")</li>
+                    <li>@Html.ActionLink("Login", "Login", "Account")</li>
                 </ul>
             </div>
         </div>
